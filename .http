@@ -1,0 +1,18 @@
+### Register
+POST http://localhost:4000/auth/register
+Content-Type: application/json
+
+{
+  "username": "john_doe",
+  "email": "samueloluwasegun999@gmail.com",
+  "password": "securepassword"
+}
+
+### Verify OTP
+POST http://localhost:4000/auth/verify-otp
+Content-Type: application/json
+
+{
+  "email": "samueloluwasegun999@gmail.com",
+  "otp": "c0b798"
+}
